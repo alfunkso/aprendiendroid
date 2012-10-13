@@ -37,9 +37,11 @@ public class Aprendiendroid extends Activity {
     	    	final Button button = new Button(getApplicationContext());
     			int n = (int)(Math.random()*9 + 1);
     			numberPool.add(n);
-    			button.setText( " " + n + " " );
+    			button.setText( "   " + n + "   " );
     			button.setLayoutParams( new RelativeLayout.LayoutParams( RelativeLayout.LayoutParams.WRAP_CONTENT
     																	, RelativeLayout.LayoutParams.WRAP_CONTENT) );
+    			button.setBackgroundResource( R.drawable.pixel_button_layout );
+    			
     			button.setOnClickListener( new View.OnClickListener() {
 					
 					@Override
